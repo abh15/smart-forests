@@ -33,7 +33,7 @@ def main(host='10.84.109.148', port=8086):
        for points in cpu_points:
            val= getfwi(points.get('time'),points.get('last'),points.get('temperature'))
            new_dic[roovi_locs.get(mac)]=val     #store FWI index acc to location
-    print("    \n\n\tLocation    |\t FWI")
+    print(" \n\n\tLocation    |\t FWI")
     pprint (new_dic)
 
 
